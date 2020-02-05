@@ -130,37 +130,67 @@ img {
 }
 nav {
   height: 75px;
-  border: 1px solid blue;
   display: flex;
   justify-content: space-evenly;
+  background-color: #2a9d8f;
+  padding: 1%;
 }
-a {
-  border: 1px solid yellow;
+.a1 {
+  width: 20%;
+  text-align: center;
+  margin: 0;
+  padding: 1% 0 0 0;
+  font-size: 125%;
+  border: 1px solid #263d42;
   color: #263d42;
   text-decoration: none;
+  background-color: #b9e9df;
+  border-radius: 40%;
 }
-a:hover {
-  color: #ff5a1e;
+.a1:hover {
+  background-color: #ff5a1e;
 }
 header {
-  border: 1px solid green;
+  display: flex;
+  background-color: #b9e9df;
+  padding: 5%;
   height: 300px;
   color: #263d42;
   text-align: center;
 }
 h1 {
   height: 100px;
-  border: 1px solid red;
-  font-size: 50px;
+  font-size: 400%;
 }
-.section1 {
-  border: 1px solid black;
-  height: 300px;
+.div1 {
+  padding: 2%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #2a9d8f;
 }
-.loginbutton {
-  margin: 10% 0 0 0;
-  padding: 5%;
+.div1 .div2 {
+  padding: 7%;
+}
+.div1 .div2 .loginbutton {
+  font-size: 125%;
   color: #263d42;
   background-color: #63c7b2;
-  border-radius: 20%;
+  border-radius: 40%;
+  text-decoration: none;
+  border: 1px solid #263d42;
+}
+.div1 .div2 .loginbutton:hover {
+  background-color: #ff5a1e;
+}
+.img2 {
+  width: 40%;
+  height: auto;
+  border: 2px solid #2a9d8f;
+  border-radius: 40%;
+}
+.img1 {
+  width: 20%;
+  height: auto;
+  border: 2px solid #2a9d8f;
+  border-radius: 40%;
 }

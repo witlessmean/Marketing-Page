@@ -1,3 +1,9 @@
+@mixin p {
+  color: #263d42;
+}
+@mixin h1 h2 {
+  color: #263d42;
+}
 html,
 body,
 div,
@@ -128,20 +134,44 @@ img {
 * {
   box-sizing: border-box;
 }
-nav {
-  height: 75px;
+.nav1 {
+  border: 5px solid #63c7b2;
+  height: 100px;
   display: flex;
   justify-content: space-evenly;
   background-color: #2a9d8f;
   padding: 1%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .nav1 {
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+  }
+  .nav1 .a1 {
+    border-radius: 80%;
+  }
+}
+.nav2 {
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #2a9d8f;
+  padding: 1%;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .a1 {
+  border: 5px solid #63c7b2;
   width: 20%;
   text-align: center;
   margin: 0;
   padding: 1% 0 0 0;
   font-size: 125%;
-  border: 1px solid #263d42;
   color: #263d42;
   text-decoration: none;
   background-color: #b9e9df;
@@ -150,31 +180,66 @@ nav {
 .a1:hover {
   background-color: #ff5a1e;
 }
-header {
+.divheader {
+  border: 3px solid #f05d5e;
+}
+.header1 {
+  margin: 5.9% 0% 0 0;
+  border: 5px solid #2a9d8f;
   display: flex;
   background-color: #b9e9df;
-  padding: 5%;
+  padding: 2%;
   height: 300px;
   color: #263d42;
   text-align: center;
 }
+.header1 .div3 {
+  margin: 0 12% 0 10%;
+}
+.header1 .imgdiv {
+  margin: 0 20% 0 0;
+}
+.header1 .imgdiv .img2 {
+  margin: 0 5% 0 0;
+  max-width: 400px;
+  max-height: 200px;
+  border: 5px solid #2a9d8f;
+  border-radius: 40%;
+}
+@media (max-width: 500px) {
+  .header1 {
+    margin: 30% 0 0 0;
+  }
+  .header1 .img2 {
+    display: none;
+  }
+}
 h1 {
   height: 100px;
-  font-size: 400%;
+  font-size: 650%;
 }
 .div1 {
-  padding: 2%;
+  border: 5px solid #63c7b2;
+  padding: 7%;
+  height: 450px;
   display: flex;
   justify-content: space-around;
   background-color: #2a9d8f;
 }
 .div1 .div2 {
+  margin: 0 -4% 0 0;
+  background-color: #63c7b2;
+  border-radius: 40%;
+  border: 5px solid #2a9d8f;
   padding: 7%;
+  display: flex;
 }
 .div1 .div2 .loginbutton {
+  padding: 15%;
+  white-space: nowrap;
   font-size: 125%;
   color: #263d42;
-  background-color: #63c7b2;
+  background-color: #95ddce;
   border-radius: 40%;
   text-decoration: none;
   border: 1px solid #263d42;
@@ -182,15 +247,241 @@ h1 {
 .div1 .div2 .loginbutton:hover {
   background-color: #ff5a1e;
 }
-.img2 {
-  width: 40%;
-  height: auto;
-  border: 2px solid #2a9d8f;
-  border-radius: 40%;
+@media (max-width) {
 }
-.img1 {
-  width: 20%;
-  height: auto;
-  border: 2px solid #2a9d8f;
+@media (max-width: 500px) {
+  .div1 .div2 {
+    border: 1px solid black;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+}
+.div1 .img1 {
+  margin: 0 3% 0 0;
   border-radius: 40%;
+  border: 5px solid #63c7b2;
+}
+@media (max-width: 500px) {
+  .div1 .img1 {
+    display: none;
+  }
+}
+.hrheader {
+  background-color: #263d42;
+  height: 5px;
+}
+.hr1 {
+  margin-left: auto;
+  background-color: #263d42;
+  width: 100px;
+  height: 5px;
+}
+.header2 {
+  color: #263d42;
+  margin: 6% 0 0 0;
+  background-color: #b9e9df;
+}
+.header2 .divheader {
+  margin: 0 0 0 1%;
+}
+@media (max-width: 500px) {
+  .header2 .divheader {
+    margin: 21.2% 0 0% 0;
+  }
+  .header2 .divheader h1 {
+    width: 100%;
+    margin: 0 0 -8% 0;
+    padding: 2% 0 0 1%;
+    font-size: 250%;
+  }
+}
+.header2 p {
+  padding: 1%;
+  font-size: 30px;
+}
+.divteam {
+  background-color: #b9e9df;
+  margin: -0.5% 0 0 0;
+}
+.divteam .team {
+  padding: 2% 0 0 0;
+  color: #263d42;
+  font-size: 50%;
+  margin: 0 0 0 1%;
+}
+@media (max-width: 500px) {
+  .divteam {
+    margin: -2% 0 0 0;
+    font-size: 10px;
+  }
+}
+.ap {
+  padding: 5%;
+}
+.mail {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 2% 0;
+}
+@media (max-width: 500px) {
+  .pmail {
+    font-size: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .pmail1 {
+    font-size: 80%;
+  }
+}
+.img8 {
+  margin: 1% 0 1% 0;
+}
+.np {
+  display: flex;
+}
+.np .nolan {
+  border: 5px solid #b9e9df;
+  background-color: #2a9d8f;
+}
+.np .nolan .w {
+  display: flex;
+  justify-content: center;
+}
+.np .nolan h2 {
+  font-size: 20px;
+}
+.np .nolan img {
+  max-width: 100%;
+  height: 150px;
+  border-radius: 40%;
+  border: 5px solid #b9e9df;
+}
+.np .patrick {
+  border: 5px solid #2a9d8f;
+  background-color: #b9e9df;
+}
+.np .patrick .w {
+  display: flex;
+  justify-content: center;
+}
+.np .patrick h2 {
+  font-size: 20px;
+}
+.np .patrick img {
+  max-width: 100%;
+  height: 150px;
+  border-radius: 40%;
+  border: 5px solid #2a9d8f;
+}
+.kt {
+  display: flex;
+}
+.kt .krishna {
+  border: 5px solid #2a9d8f;
+  background-color: #b9e9df;
+}
+.kt .krishna .w {
+  display: flex;
+  justify-content: center;
+}
+.kt .krishna h2 {
+  font-size: 20px;
+}
+.kt .krishna img {
+  max-width: 100%;
+  height: 150px;
+  border-radius: 40%;
+  border: 5px solid #2a9d8f;
+}
+.kt .tate {
+  border: 5px solid #b9e9df;
+  background-color: #2a9d8f;
+}
+.kt .tate .w {
+  display: flex;
+  justify-content: center;
+}
+.kt .tate h2 {
+  font-size: 20px;
+}
+.kt .tate img {
+  max-width: 100%;
+  height: 150px;
+  border-radius: 40%;
+  border: 5px solid #b9e9df;
+}
+.sw {
+  display: flex;
+}
+.sw .shawn {
+  border: 5px solid #b9e9df;
+  background-color: #2a9d8f;
+}
+.sw .shawn .w {
+  display: flex;
+  justify-content: center;
+}
+.sw .shawn h2 {
+  font-size: 20px;
+}
+.sw .shawn img {
+  max-width: 100%;
+  height: 150px;
+  border-radius: 40%;
+  border: 5px solid #b9e9df;
+}
+.sw .wayne {
+  border: 5px solid #2a9d8f;
+  background-color: #b9e9df;
+}
+.sw .wayne .w {
+  display: flex;
+  justify-content: center;
+}
+.sw .wayne h2 {
+  font-size: 20px;
+}
+.sw .wayne img {
+  max-width: 100%;
+  height: 150px;
+  border-radius: 40%;
+  border: 5px solid #2a9d8f;
+}
+.kv {
+  display: flex;
+}
+.kv .kejda {
+  border: 5px solid #2a9d8f;
+  background-color: #b9e9df;
+}
+.kv .kejda .w {
+  display: flex;
+  justify-content: center;
+}
+.kv .kejda h2 {
+  font-size: 20px;
+}
+.kv .kejda img {
+  max-width: 100%;
+  height: 150px;
+  border-radius: 40%;
+  border: 5px solid #2a9d8f;
+}
+.kv .vick {
+  border: 5px solid #b9e9df;
+  background-color: #2a9d8f;
+}
+.kv .vick .w {
+  display: flex;
+  justify-content: center;
+}
+.kv .vick h2 {
+  font-size: 20px;
+}
+.kv .vick img {
+  max-width: 100%;
+  height: 150px;
+  border-radius: 40%;
+  border: 5px solid #b9e9df;
 }

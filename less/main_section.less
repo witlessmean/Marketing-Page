@@ -1,42 +1,88 @@
-//.section1 {
-//background-color: #2a9d8f;
-//padding: 5%;
-//border: 1px solid black;
-//height: 300px;
-//}
+.divheader {
+  border: 3px solid #f05d5e;
+}
+
+.header1 {
+  margin: 5.9% 0% 0 0;
+  border: 5px solid #2a9d8f;
+  display: flex;
+  background-color: #b9e9df;
+  padding: 2%;
+  height: 300px;
+  color: #263d42;
+  text-align: center;
+  .div3 {
+    margin: 0 12% 0 10%;
+  }
+  .imgdiv {
+    margin: 0 20% 0 0;
+
+    .img2 {
+      margin: 0 5% 0 0;
+      max-width: 400px;
+      max-height: 200px;
+      border: 5px solid#2a9d8f;
+      border-radius: 40%;
+    }
+  }
+  @media (max-width: 500px) {
+    margin: 30% 0 0 0;
+    .img2 {
+      display: none;
+    }
+  }
+}
+h1 {
+  height: 100px;
+  font-size: 650%;
+}
 
 .div1 {
-  padding: 2%;
+  border: 5px solid #63c7b2;
+  padding: 7%;
+  height: 450px;
   display: flex;
   justify-content: space-around;
-
   background-color: #2a9d8f;
   .div2 {
+    margin: 0 -4% 0 0;
+    background-color: #63c7b2;
+    border-radius: 40%;
+    border: 5px solid #2a9d8f;
     padding: 7%;
+    display: flex;
 
     .loginbutton {
+      padding: 15%;
+      white-space: nowrap;
       font-size: 125%;
       color: #263d42;
-      background-color: #63c7b2;
+      background-color: #95ddce;
       border-radius: 40%;
       text-decoration: none;
       border: 1px solid #263d42;
       &:hover {
         background-color: #ff5a1e;
       }
+      @media (max-width) {
+        //border: 1px solid red;
+      }
+    }
+    @media (max-width: 500px) {
+      border: 1px solid black;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
     }
   }
-}
-.img2 {
-  width: 40%;
-  height: auto;
-  border: 2px solid#2a9d8f;
-  border-radius: 40%;
-}
-
-.img1 {
-  width: 20%;
-  height: auto;
-  border: 2px solid #2a9d8f;
-  border-radius: 40%;
+  .img1 {
+    margin: 0 3% 0 0;
+    border-radius: 40%;
+    border: 5px solid #63c7b2;
+  }
+  @media (max-width: 500px) {
+    .img1 {
+      display: none;
+    }
+  }
 }

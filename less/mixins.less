@@ -1,28 +1,24 @@
-// .signUpButton { 
-//     .button(180px, 55px, #41B3A3, 8px);
-  
-//   }
 
 
-.flex-center { 
+
+
+
+.flexer {
+  display: flex;
+}
+
+.flexCenter { 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.bottomLine {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed;
-}
-
-.button(@width, @height, @background-color, @border-radius) { 
+.button(@width, @height, @background-color, @border-radius, @opacity) { 
     width: @width;
     height: @height;
     background-color: @background-color;
     border-radius: @border-radius; 
+    opacity: @opacity;
   }
   
-  .hover(@background-color, @transition) { 
-    background-color: @background-color;
-    transition: @transition;
-  }
+  

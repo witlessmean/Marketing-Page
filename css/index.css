@@ -1,11 +1,10 @@
-.flex-center {
+.flexer {
+  display: flex;
+}
+.flexCenter {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.bottomLine {
-  padding-bottom: 30px;
-  border-bottom: 2px dashed;
 }
 html,
 body,
@@ -91,12 +90,10 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
   font-family: 'Raleway', sans-serif;
 }
-
+/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -113,6 +110,7 @@ section {
 body {
   width: 1200px;
   line-height: 1;
+  font-size: 1.6rem;
 }
 ol,
 ul {
@@ -142,7 +140,166 @@ img {
 }
 html {
   font-size: 62.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-* {
-  background-color: pink;
+.heroContainer {
+  position: relative;
+}
+.droom {
+  position: absolute;
+  top: 20%;
+  bottom: 0;
+  left: 40%;
+  font-weight: bolder;
+  font-size: 8rem;
+  background: -webkit-linear-gradient(left, #263D42, #2A9D8F, #FF5A1E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Righteous', cursive;
+}
+.heroText {
+  position: absolute;
+  top: 34%;
+  bottom: 0;
+  left: 22%;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: 'Lobster', cursive;
+  color: #263D42;
+  text-shadow: 2px 2px #2A9D8F;
+}
+.hero {
+  opacity: 0.7;
+}
+.signUpButton {
+  width: 180px;
+  height: 55px;
+  background-color: #263D42;
+  border-radius: 8px;
+  opacity: 0.8;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 43%;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #F05D5E;
+  text-shadow: 2px 2px #2A9D8F;
+  font-family: 'righteous', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signUpButton:hover {
+  opacity: 1;
+  transition: ease-in 0.5s;
+}
+@media (max-width: 850px) {
+  .heroText {
+    position: unset;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .signUpButton {
+    position: unset;
+  }
+  .droom {
+    position: unset;
+  }
+  .heroContainer {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.aboutText {
+  position: absolute;
+  top: 34%;
+  bottom: 0;
+  left: 1%;
+  right: 1%;
+  font-size: 3.2vh;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: #263D42;
+  border-radius: 8px;
+  line-height: 1.2;
+  text-align: center;
+  background: rgba(234, 231, 220, 0.4);
+}
+.signUpButtonAbout {
+  width: 180px;
+  height: 55px;
+  background-color: #263D42;
+  border-radius: 8px;
+  opacity: 0.8;
+  text-decoration: none;
+  position: absolute;
+  top: 80%;
+  bottom: 0;
+  left: 43%;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #F05D5E;
+  text-shadow: 2px 2px #2A9D8F;
+  font-family: 'righteous', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signUpButtonAbout:hover {
+  opacity: 1;
+  transition: ease-in 0.5s;
+}
+@media (max-width: 850px) {
+  .aboutText {
+    position: unset;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .signUpButtonAbout {
+    position: unset;
+  }
+  .droom {
+    position: unset;
+  }
+  .heroContainer {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  header nav {
+    justify-content: center;
+  }
+}
+header nav a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+  padding: 5px;
+  font-weight: 800;
+  color: #263D42;
+}
+header nav a:hover {
+  text-shadow: 2px 2px #2A9D8F;
+  transition: ease-in 0.2s;
+}
+@media (max-width: 850px) {
+  footer {
+    display: none;
+  }
 }

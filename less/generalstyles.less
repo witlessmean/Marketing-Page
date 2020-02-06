@@ -142,3 +142,46 @@
         
 }
 
+
+
+//Team //
+
+.teamBox {
+    .flexCenter();
+    margin: 0 auto;
+    opacity: 0.7;
+    width: 100%;
+    }
+
+.teamBox:hover {
+    opacity: 1;
+    transition: ease-in-out 0.4s;
+    
+}
+
+
+.description {
+    text-align: center;
+    font-size: 0;
+    
+}
+
+.description:hover {
+    font-size: 2rem;
+    transition: ease-in-out 0.4s;
+    font-weight: bold;
+}
+
+@media @tablet {
+    .teamBox {
+        .flexCenter();
+        flex-direction: column;
+        
+    }
+        .description {
+            padding: 10px;
+            font-size: 2rem;
+        }
+}
+
+

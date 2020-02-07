@@ -1,84 +1,123 @@
-.header1 {
-  margin: 5.9% 0% 0 0;
-  border: 5px solid #2a9d8f;
-  display: flex;
-  background-color: #b9e9df;
-  padding: 2%;
-  height: 300px;
-  color: #263d42;
-  text-align: center;
-  .div3 {
-    margin: 0 12% 0 10%;
-  }
-  .imgdiv {
-    margin: 0 20% 0 0;
+body {
+  box-sizing: border-box;
+  border: 1px solid blue;
+  width: 100%;
 
-    .img2 {
-      margin: 0 5% 0 0;
-      max-width: 400px;
-      max-height: 200px;
-      border: 5px solid#2a9d8f;
-      border-radius: 40%;
-    }
-  }
-  @media (max-width: 500px) {
-    margin: 30% 0 0 0;
-    .img2 {
-      display: none;
-    }
-  }
-}
-h1 {
-  height: 100px;
-  font-size: 650%;
-}
-
-.div1 {
-  border: 5px solid #63c7b2;
-  padding: 7%;
-  height: 450px;
-  display: flex;
-  justify-content: space-around;
-  background-color: #2a9d8f;
-  .div2 {
-    margin: 0 -4% 0 0;
-    background-color: #63c7b2;
-    border-radius: 40%;
-    border: 5px solid #2a9d8f;
-    padding: 7%;
+  .header1 {
+    width: 100%;
+    margin: 5.9% 0% 0 0;
+    border: 5px solid red; //#2a9d8f;
+    background-color: #b9e9df;
+    padding: 2%;
+    height: auto;
+    color: #263d42;
     display: flex;
+    justify-content: space-around;
 
-    .loginbutton {
-      padding: 15%;
-      white-space: nowrap;
-      font-size: 125%;
-      color: #263d42;
-      background-color: #95ddce;
-      border-radius: 40%;
-      text-decoration: none;
-      border: 1px solid #263d42;
-      &:hover {
-        background-color: #ff5a1e;
+    .div3 {
+      width: 180%;
+      border: 1px solid blue;
+      margin: 9%;
+
+      h1 {
+        width: 100%;
+        color: #263d42;
+        -webkit-text-fill-color: #f05d5e; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 0.2rem;
+        -webkit-text-stroke-color: #263d42;
+        height: auto;
+        font-size: 650%;
       }
-      @media (max-width) {
-        //border: 1px solid red;
+      p {
+        color: #263d42;
+        -webkit-text-fill-color: #f05d5e; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #263d42;
+      }
+    }
+    .imgdiv {
+      width: 100%;
+      border: 1px solid black;
+      margin: 10% 12% 10% -5%;
+
+      .img2 {
+        width: 100%;
+        max-width: 30rem;
+
+        border: 5px solid#2a9d8f;
+        border-radius: 40%;
+        @media (max-width: 500px) {
+          display: none;
+        }
       }
     }
     @media (max-width: 500px) {
-      border: 1px solid black;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
+      margin: 20% 0 0 0;
     }
   }
-  .img1 {
-    margin: 0 3% 0 0;
-    border-radius: 40%;
+
+  .div1 {
     border: 5px solid #63c7b2;
-  }
-  @media (max-width: 500px) {
+    padding: 7%;
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #2a9d8f;
+    .div2 {
+      margin: auto 0;
+      background-color: #63c7b2;
+      border-radius: 40%;
+      //border: 5px solid red; //#2a9d8f;
+      padding: 7%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      p {
+        font-size: 150%;
+        margin: 0 0 5% 0;
+        color: #263d42;
+        -webkit-text-fill-color: #f05d5e; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #263d42;
+      }
+
+      .loginbutton {
+        width: 90%;
+        padding: 15%;
+        white-space: nowrap;
+        font-size: 160%;
+        color: #263d42;
+        background-color: #95ddce;
+        border-radius: 40%;
+        text-decoration: none;
+        border: 1px solid #f05d5e;
+        transition-duration: 1s;
+        color: #263d42;
+        -webkit-text-fill-color: #f05d5e; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #263d42;
+        &:hover {
+          background-color: #ff5a1e;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @media (max-width: 500px) {
+        border: 1px solid black;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+      }
+    }
     .img1 {
-      display: none;
+      margin: 0 3% 0 0;
+      border-radius: 40%;
+      border: 5px solid #63c7b2;
+      @media (max-width: 500px) {
+        display: none;
+      }
     }
   }
 }

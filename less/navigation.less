@@ -1,6 +1,6 @@
 .nav1 {
   border: 5px solid #63c7b2;
-  height: 100px;
+  height: auto;
   display: flex;
   justify-content: space-evenly;
   background-color: #2a9d8f;
@@ -14,7 +14,7 @@
     width: 20%;
     text-align: center;
     margin: 0;
-    font-size: 125%;
+    font-size: 150%;
     color: #263d42;
     text-decoration: none;
     background-color: #b9e9df;
@@ -22,6 +22,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-duration: 1s;
+    color: black;
+    -webkit-text-fill-color: #f05d5e; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
     &:hover {
       background-color: #ff5a1e;
     }
@@ -29,6 +34,8 @@
       flex-direction: column;
       align-items: center;
       height: 20%;
+      font-size: 100%;
+      padding: 2%;
     }
   }
 }

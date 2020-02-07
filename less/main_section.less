@@ -1,22 +1,24 @@
 body {
   box-sizing: border-box;
-  border: 1px solid blue;
+
   width: 100%;
 
   .header1 {
     width: 100%;
     margin: 5.9% 0% 0 0;
-    border: 5px solid red; //#2a9d8f;
+
     background-color: #b9e9df;
     padding: 2%;
     height: auto;
     color: #263d42;
     display: flex;
     justify-content: space-around;
-
+    @media (max-width: 500px) {
+      margin: 20% 0 0 0;
+    }
     .div3 {
       width: 180%;
-      border: 1px solid blue;
+
       margin: 9%;
 
       h1 {
@@ -37,7 +39,7 @@ body {
     }
     .imgdiv {
       width: 100%;
-      border: 1px solid black;
+
       margin: 10% 12% 10% -5%;
 
       .img2 {
@@ -50,9 +52,6 @@ body {
           display: none;
         }
       }
-    }
-    @media (max-width: 500px) {
-      margin: 20% 0 0 0;
     }
   }
 

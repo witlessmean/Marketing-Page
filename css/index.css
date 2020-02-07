@@ -210,13 +210,13 @@ body {
 }
 body .header1 {
   width: 100%;
-  margin: 5.9% 0% 0 0;
+  margin: auto 0;
+  border: 1px solid red;
   background-color: #b9e9df;
-  padding: 2%;
   height: auto;
   color: #263d42;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 @media (max-width: 500px) {
   body .header1 {
@@ -224,8 +224,15 @@ body .header1 {
   }
 }
 body .header1 .div3 {
-  width: 180%;
-  margin: 9%;
+  width: 100%;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  body .header1 .div3 {
+    height: 39vh;
+  }
 }
 body .header1 .div3 h1 {
   width: 100%;
@@ -236,8 +243,13 @@ body .header1 .div3 h1 {
   -webkit-text-stroke-color: #263d42;
   height: auto;
   font-size: 650%;
+  display: flex;
+  justify-content: center;
 }
 body .header1 .div3 p {
+  font-size: 170%;
+  display: flex;
+  justify-content: center;
   color: #263d42;
   -webkit-text-fill-color: #f05d5e;
   /* Will override color (regardless of order) */
@@ -245,8 +257,17 @@ body .header1 .div3 p {
   -webkit-text-stroke-color: #263d42;
 }
 body .header1 .imgdiv {
+  display: flex;
+  align-items: center;
   width: 100%;
-  margin: 10% 12% 10% -5%;
+  height: 50vh;
+  margin: 5% 0 0 0;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  body .header1 .imgdiv {
+    display: none;
+  }
 }
 body .header1 .imgdiv .img2 {
   width: 100%;
@@ -254,14 +275,8 @@ body .header1 .imgdiv .img2 {
   border: 5px solid #2a9d8f;
   border-radius: 40%;
 }
-@media (max-width: 500px) {
-  body .header1 .imgdiv .img2 {
-    display: none;
-  }
-}
 body .div1 {
   border: 5px solid #63c7b2;
-  padding: 7%;
   height: 450px;
   display: flex;
   justify-content: space-around;
@@ -271,6 +286,7 @@ body .div1 .div2 {
   margin: auto 0;
   background-color: #63c7b2;
   border-radius: 40%;
+  border: 3px solid #f05d5e;
   padding: 7%;
   display: flex;
   justify-content: center;
@@ -317,9 +333,11 @@ body .div1 .div2 .loginbutton:hover {
   }
 }
 body .div1 .img1 {
-  margin: 0 3% 0 0;
+  width: 100%;
+  max-width: 25rem;
+  margin: auto 0;
   border-radius: 40%;
-  border: 5px solid #63c7b2;
+  border: 3px solid red;
 }
 @media (max-width: 500px) {
   body .div1 .img1 {
@@ -336,10 +354,17 @@ body .div1 .img1 {
   width: 100px;
   height: 5px;
 }
+.emptydiv {
+  background: #b9e9df;
+  margin: auto 0;
+}
 .header2 {
   color: #263d42;
-  margin: 10% 0 0 0;
+  margin: auto 0;
   background-color: #b9e9df;
+}
+.header2 .divheader {
+  padding: 9% 0 0 0;
 }
 @media (max-width: 500px) {
   .header2 .divheader {

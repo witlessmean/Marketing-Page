@@ -5,21 +5,26 @@ body {
 
   .header1 {
     width: 100%;
-    margin: 5.9% 0% 0 0;
-
+    margin: auto 0; //5.9% 0% 0 0;
+    border: 1px solid red;
     background-color: #b9e9df;
-    padding: 2%;
+    //padding: 2%;
     height: auto;
     color: #263d42;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     @media (max-width: 500px) {
       margin: 20% 0 0 0;
     }
     .div3 {
-      width: 180%;
+      width: 100%;
 
-      margin: 9%;
+      margin: auto 0;
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 500px) {
+        height: 39vh;
+      }
 
       h1 {
         width: 100%;
@@ -29,8 +34,13 @@ body {
         -webkit-text-stroke-color: #263d42;
         height: auto;
         font-size: 650%;
+        display: flex;
+        justify-content: center;
       }
       p {
+        font-size: 170%;
+        display: flex;
+        justify-content: center;
         color: #263d42;
         -webkit-text-fill-color: #f05d5e; /* Will override color (regardless of order) */
         -webkit-text-stroke-width: 1px;
@@ -38,26 +48,28 @@ body {
       }
     }
     .imgdiv {
+      display: flex;
+      align-items: center;
       width: 100%;
-
-      margin: 10% 12% 10% -5%;
-
+      height: 50vh;
+      margin: 5% 0 0 0;
+      justify-content: center;
+      @media (max-width: 500px) {
+        display: none;
+      }
       .img2 {
         width: 100%;
         max-width: 30rem;
 
         border: 5px solid#2a9d8f;
         border-radius: 40%;
-        @media (max-width: 500px) {
-          display: none;
-        }
       }
     }
   }
 
   .div1 {
-    border: 5px solid #63c7b2;
-    padding: 7%;
+    border: 5px solid#63c7b2;
+
     height: 450px;
     display: flex;
     justify-content: space-around;
@@ -66,7 +78,7 @@ body {
       margin: auto 0;
       background-color: #63c7b2;
       border-radius: 40%;
-      //border: 5px solid red; //#2a9d8f;
+      border: 3px solid #f05d5e;
       padding: 7%;
       display: flex;
       justify-content: center;
@@ -111,9 +123,11 @@ body {
       }
     }
     .img1 {
-      margin: 0 3% 0 0;
+      width: 100%;
+      max-width: 25rem;
+      margin: auto 0;
       border-radius: 40%;
-      border: 5px solid #63c7b2;
+      border: 3px solid red; //#63c7b2;
       @media (max-width: 500px) {
         display: none;
       }

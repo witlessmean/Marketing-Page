@@ -1,0 +1,341 @@
+.flexer {
+  display: flex;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-family: 'Raleway', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  width: 1200px;
+  line-height: 1;
+  font-size: 1.6rem;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroContainer {
+  position: relative;
+}
+.droom {
+  position: absolute;
+  top: 20%;
+  bottom: 0;
+  left: 40%;
+  font-weight: bolder;
+  font-size: 8rem;
+  background: -webkit-linear-gradient(left, #263D42, #2A9D8F, #FF5A1E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Righteous', cursive;
+}
+.heroText {
+  position: absolute;
+  top: 34%;
+  bottom: 0;
+  left: 22%;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: 'Lobster', cursive;
+  color: #263D42;
+  text-shadow: 2px 2px #2A9D8F;
+}
+.hero {
+  opacity: 0.7;
+}
+.signUpButton {
+  width: 180px;
+  height: 55px;
+  background-color: #263D42;
+  border-radius: 8px;
+  opacity: 0.8;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 43%;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #F05D5E;
+  text-shadow: 2px 2px #2A9D8F;
+  font-family: 'righteous', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signUpButton:hover {
+  opacity: 1;
+  transition: ease-in 0.5s;
+}
+@media (max-width: 850px) {
+  .heroText {
+    position: unset;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .signUpButton {
+    position: unset;
+  }
+  .droom {
+    position: unset;
+  }
+  .heroContainer {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.aboutText {
+  position: absolute;
+  top: 34%;
+  bottom: 0;
+  left: 1%;
+  right: 1%;
+  font-size: 3.2vh;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: #263D42;
+  border-radius: 8px;
+  line-height: 1.2;
+  text-align: center;
+  background: rgba(234, 231, 220, 0.4);
+}
+.signUpButtonAbout {
+  width: 180px;
+  height: 55px;
+  background-color: #263D42;
+  border-radius: 8px;
+  opacity: 0.8;
+  text-decoration: none;
+  position: absolute;
+  top: 80%;
+  bottom: 0;
+  left: 43%;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #F05D5E;
+  text-shadow: 2px 2px #2A9D8F;
+  font-family: 'righteous', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signUpButtonAbout:hover {
+  opacity: 1;
+  transition: ease-in 0.5s;
+}
+@media (max-width: 850px) {
+  .aboutText {
+    position: unset;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .signUpButtonAbout {
+    position: unset;
+  }
+  .droom {
+    position: unset;
+  }
+  .heroContainer {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.teamBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  opacity: 0.7;
+  width: 100%;
+}
+.teamBox:hover {
+  opacity: 1;
+  transition: ease-in-out 0.4s;
+}
+.description {
+  text-align: center;
+  font-size: 0;
+}
+.description:hover {
+  font-size: 2rem;
+  transition: ease-in-out 0.4s;
+  font-weight: bold;
+}
+@media (max-width: 850px) {
+  .teamBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .description {
+    padding: 10px;
+    font-size: 2rem;
+  }
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  header nav {
+    justify-content: center;
+  }
+}
+header nav a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+  padding: 5px;
+  font-weight: 800;
+  color: #263D42;
+}
+header nav a:hover {
+  text-shadow: 2px 2px #2A9D8F;
+  transition: ease-in 0.2s;
+}
+footer {
+  margin-top: 4vh;
+}
+@media (max-width: 850px) {
+  footer {
+    display: none;
+  }
+}

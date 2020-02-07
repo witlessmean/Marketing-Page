@@ -1,0 +1,187 @@
+#bodyStyles {
+   
+   }
+
+.heroContainer {
+    position: relative;
+    
+}
+
+.droom {
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    left: 40%;
+    font-weight: bolder;
+    font-size: 8rem;
+    background: -webkit-linear-gradient(left, @jI, @jG, @gO);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Righteous', cursive;
+
+}
+
+.heroText {
+    position: absolute;
+    top: 34%;
+    bottom: 0;
+    left: 22%;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    color: @jI; 
+    text-shadow: 2px 2px @jG;
+}
+
+.hero {
+    opacity: 0.7;
+}
+
+.signUpButton {
+    .button(180px, 55px, @jI, 8px, 0.8);
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 43%;
+    font-size: 4rem;
+    font-weight: bold;
+    color: @sO;
+    text-shadow: 2px 2px @jG;
+    font-family: 'righteous', sans-serif;
+    .flexCenter();
+}
+
+.signUpButton:hover {
+    opacity: 1;
+    transition: ease-in 0.5s;
+}
+
+
+@media @tablet {
+    .heroText { 
+        position: unset; 
+        padding: 10px; 
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .signUpButton {
+        position: unset;
+    }
+    .droom {
+        position: unset;
+    }
+    .heroContainer { 
+        display: flex;
+        flex-direction: column;
+        .flexCenter();
+    }
+        
+}
+
+
+
+//about page//
+
+.aboutText {
+    position: absolute;
+    top: 34%;
+    bottom: 0;
+    left: 1%;
+    right: 1%;
+    font-size: 3.2vh;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: @jI; 
+    border-radius: 8px;
+    line-height: 1.2;
+    text-align: center;
+    background: rgba(234, 231, 220, 0.4)
+    
+}
+    
+.signUpButtonAbout {
+    .button(180px, 55px, @jI, 8px, 0.8);
+    text-decoration: none;
+    position: absolute;
+    top: 80%;
+    bottom: 0;
+    left: 43%;
+    font-size: 4rem;
+    font-weight: bold;
+    color: @sO;
+    text-shadow: 2px 2px @jG;
+    font-family: 'righteous', sans-serif;
+    .flexCenter();
+}
+
+.signUpButtonAbout:hover {
+    opacity: 1;
+    transition: ease-in 0.5s;
+}
+
+
+@media @tablet {
+    .aboutText { 
+        position: unset; 
+        padding: 10px; 
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .signUpButtonAbout {
+        position: unset;
+    }
+    .droom {
+        position: unset;
+    }
+    .heroContainer { 
+        display: flex;
+        flex-direction: column;
+        .flexCenter();
+    }
+        
+}
+
+
+
+//Team //
+
+.teamBox {
+    .flexCenter();
+    margin: 0 auto;
+    opacity: 0.7;
+    width: 100%;
+    }
+
+.teamBox:hover {
+    opacity: 1;
+    transition: ease-in-out 0.4s;
+    
+}
+
+
+.description {
+    text-align: center;
+    font-size: 0;
+    
+}
+
+.description:hover {
+    font-size: 2rem;
+    transition: ease-in-out 0.4s;
+    font-weight: bold;
+}
+
+@media @tablet {
+    .teamBox {
+        .flexCenter();
+        flex-direction: column;
+        
+    }
+        .description {
+            padding: 10px;
+            font-size: 2rem;
+        }
+}
+
+
